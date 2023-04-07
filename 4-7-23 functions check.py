@@ -26,3 +26,47 @@ def ATDS(x,y):
     return r
 
 print(ATDS(5.0,2.5))
+
+
+food = ["speget","brug", "chick tend", "fried rings", "Ice cream", "Sesame chicken", "doughnuts", "Chinese Food"]
+
+print([food[2]])
+food.append("Tacos")
+print(len(food))
+print(food)
+
+pet = []
+
+quit2 = False
+
+while quit2 == False:
+    l = input("What is the name of your pet, once done tpye quit ")
+    if l == "quit":
+        quit2 = True
+    else:
+        pet.append(l)
+
+pet.sort()
+print(pet)
+
+
+for i in range(-20, 45, 5):
+    print(i)
+
+for i in range(5):
+    for j in range(2):
+        print("*", end='')
+    print()
+
+n = 50
+while n != -10:
+    print(n)
+    n-=10
+
+s = False
+while s == False:
+    l = input("do you want a Cookie")
+    if l == "Yes":
+        print("Here's a cookie")
+    else:
+        s = True
